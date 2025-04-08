@@ -7,7 +7,7 @@ This repository is for backup and maintainance for environment settings
 3. install packages
 4. git configuration
 5. vim configuration
-### packages
+### apt packages
 - openssh-server
 - git
 - gcc/g++
@@ -19,6 +19,8 @@ This repository is for backup and maintainance for environment settings
 
 # 2. env-pt.Dockerfile
 Set Pytorch development environment
+### FROM
+- pytorch/pytorch:latest
 ### apt packages
 - git
 - curl
@@ -28,7 +30,6 @@ Set Pytorch development environment
 - libsm6
 - libxext6
 ### python packages
-- pytorch/pytorch:latest
 - torchinfo/torchtext/torchdata/portalocker 
 - matplotlib/scipy/pandas/scikit-learn 
 - opencv-python/opencv-contrib-python
@@ -39,6 +40,8 @@ Set Pytorch development environment
 
 # 3. env-ml.Dockerfile
 Set ML development environment
+### FROM
+- continuumio/miniconda3:latest
 ### apt packages
 - git
 - curl
@@ -54,5 +57,3 @@ Set ML development environment
 - pymongo/selenium 
 - icecream
 - wandb
-### others
-- continuumio/miniconda3:latest
