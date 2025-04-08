@@ -1,3 +1,6 @@
+# 0. Overview
+This repository is for backup and maintainance for environment settings
+
 # 1. ubuntu-preset.sh
 1. force color setting for bash shell
 2. update mirror repository [kr.archive.ubuntu.com](http://kr.archive.ubuntu.com/) → [mirror.kakao.com](http://mirror.kakao.com/)
