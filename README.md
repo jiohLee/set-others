@@ -16,7 +16,7 @@
 
 # 2. env-pt.Dockerfile
 Set Pytorch development environment
-### pat packages
+### apt packages
 - git
 - curl
 - cmake
