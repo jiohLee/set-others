@@ -1,15 +1,55 @@
 # 1. ubuntu-preset.sh
-- force color setting for bash shell
-- update mirror repository [kr.archive.ubuntu.com](http://kr.archive.ubuntu.com/) → [mirror.kakao.com](http://mirror.kakao.com/)
-- install packages
-    - asdf
-    - openssh-server
-    - git
-    - gcc/g++
-    - curl
-    - net-tools
-    - make/cmake
-    - xutils-dev
-    - htop
-- git configuration
-- vim configuration
+1. force color setting for bash shell
+2. update mirror repository [kr.archive.ubuntu.com](http://kr.archive.ubuntu.com/) → [mirror.kakao.com](http://mirror.kakao.com/)
+3. install packages
+4. git configuration
+5. vim configuration
+### packages
+- openssh-server
+- git
+- gcc/g++
+- curl
+- net-tools
+- make/cmake
+- xutils-dev
+- htop
+
+# 2. env-pt.Dockerfile
+Set Pytorch development environment
+### pat packages
+- git
+- curl
+- cmake
+- tmux
+- ffmpeg
+- libsm6
+- libxext6
+### python packages
+- pytorch/pytorch:latest
+- torchinfo/torchtext/torchdata/portalocker 
+- matplotlib/scipy/pandas/scikit-learn 
+- opencv-python/opencv-contrib-python
+- nltk/spacy
+- ipykernel
+- icecream
+- wandb
+
+# 3. env-ml.Dockerfile
+Set ML development environment
+### apt packages
+- git
+- curl
+- cmake
+- tmux
+- ffmpeg
+- libsm6
+- libxext6
+### python packages
+- opencv-python/opencv-contrib-python
+- matplotlib/scipy/pandas/scikit-learn 
+- streamlit/fastapi/uvicorn
+- pymongo/selenium 
+- icecream
+- wandb
+### others
+- continuumio/miniconda3:latest
