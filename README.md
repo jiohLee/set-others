@@ -18,7 +18,7 @@ This repository is for backup and maintainance for environment settings
 - htop
 
 # 2. env-pt.Dockerfile
-Set Pytorch development environment
+Set PyTorch development environment
 ### FROM
 - pytorch/pytorch:latest
 ### apt packages
