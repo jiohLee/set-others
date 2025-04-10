@@ -48,7 +48,6 @@ set ts=4
 set sw=4
 set ls=2
 set cindent
-set showmatch
 colorscheme onehalfdark
 "> ~/.vimrc
 vim +PluginInstall +qall
