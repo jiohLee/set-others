@@ -22,8 +22,8 @@ apt install -y \
 		htop \
 
 # git configuration
-git config --gloabl user.email "jiosiro@gmail.com"
-git config --gloabl user.name "jiohLee"
+git config --global user.email "jiosiro@gmail.com"
+git config --global user.name "jiohLee"
 git config --global credential.helper store
 
 # vim configuration
