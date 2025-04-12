@@ -6,7 +6,6 @@ This repository is for backup and maintainance for environment settings
 2. update mirror repository [kr.archive.ubuntu.com](http://kr.archive.ubuntu.com/) → [mirror.kakao.com](http://mirror.kakao.com/)
 3. install packages
 4. git configuration
-5. vim configuration
 ### apt packages
 - openssh-server
 - git
@@ -17,7 +16,14 @@ This repository is for backup and maintainance for environment settings
 - xutils-dev
 - htop
 
-# 2. env-pt.Dockerfile
+# 2. preset-ubuntu.sh
+1. vim configuration
+- Vundle
+- NERDTree
+- colorscheme onehalfdark
+- keymaps for NERDTree
+
+# 3. env-pt.Dockerfile
 Set PyTorch development environment
 ### FROM
 - pytorch/pytorch:latest
@@ -38,7 +44,7 @@ Set PyTorch development environment
 - icecream
 - wandb
 
-# 3. env-ml.Dockerfile
+# 4. env-ml.Dockerfile
 Set ML development environment
 ### FROM
 - continuumio/miniconda3:latest
