@@ -50,12 +50,18 @@ set cindent"> ~/.vimrc
 
 vim +PluginInstall +qall
 
-echo -e "
+echo -e "set nu
+set ts=4
+set sw=4
+set ls=2
+set cindent
+
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 highlight Normal ctermfg = white ctermbg = NONE
 highligh LineNr ctermbg = NONE
 
 nmap <C-b> :NERDTreeToggle<CR>
-" >> ~/.vimrc
+nnoremap <Esc>[1;5C :tabnext<CR>
+nnoremap <Esc>[1;5D :tabprevious<CR>" >> ~/.vimrc
 soucre $HOME/.bashrc
