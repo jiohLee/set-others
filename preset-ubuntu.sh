@@ -31,14 +31,13 @@ git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.v
 
 echo -e "
 set nocompatible
-filetype off    
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'sonph/onehalf', {'rtp': 'vim/'}
-let g:airline_theme='onehalfdark'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 filetype plugin indent on
@@ -48,7 +47,7 @@ set ts=4
 set sw=4
 set ls=2
 set cindent
-colorscheme onehalfdark
 "> ~/.vimrc
 vim +PluginInstall +qall
+echo -e "colorscheme jellybeans" >> ~/.vimrc
 soucre $HOME/.bashrc
