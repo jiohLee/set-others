@@ -50,12 +50,7 @@ set cindent"> ~/.vimrc
 
 vim +PluginInstall +qall
 
-echo -e "set nu
-set ts=4
-set sw=4
-set ls=2
-set cindent
-
+echo -e "
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 highlight Normal ctermfg = white ctermbg = NONE
