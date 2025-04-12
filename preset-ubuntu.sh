@@ -36,7 +36,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
@@ -49,5 +48,8 @@ set ls=2
 set cindent
 "> ~/.vimrc
 vim +PluginInstall +qall
-echo -e "colorscheme jellybeans" >> ~/.vimrc
+echo -e "
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+" >> ~/.vimrc
 soucre $HOME/.bashrc
