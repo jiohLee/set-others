@@ -16,12 +16,15 @@ This repository is for backup and maintainance for environment settings
 - xutils-dev
 - htop
 
-# 2. preset-ubuntu.sh
+# 2. preset-vim.sh
 1. vim configuration
-- Vundle
-- NERDTree
-- colorscheme onehalfdark
-- keymaps for NERDTree
+- VundleVim/Vundle.vim
+- scrooloose/nerdtree
+- vim-airline/vim-airline
+- SirVer/ultisnips
+- honza/vim-snippets
+- sonph/onehalf
+- keymaps for nerdtree/ultisnips
 
 # 3. env-pt.Dockerfile
 Set PyTorch development environment
