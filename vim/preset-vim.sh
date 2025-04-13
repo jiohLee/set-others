@@ -51,6 +51,6 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips']
 EOF
 
-cp c.snippets cpp.snippets ~/.vim/bundle/vim-snippets/snippets/
+cp -r snippets ~/.vim/bundle/vim-snippets/
 
 source $HOME/.bashrc
