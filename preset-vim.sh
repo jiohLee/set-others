@@ -9,10 +9,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
-Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
+
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 
 call vundle#end()
 filetype plugin indent on"> ~/.vimrc
