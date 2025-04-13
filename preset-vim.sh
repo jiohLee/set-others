@@ -11,6 +11,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+
 call vundle#end()
 filetype plugin indent on"> ~/.vimrc
 
@@ -34,5 +37,6 @@ nnoremap <Esc>[1;5D :tabprevious<CR>
 
 let g:UltiSnipsExpandTrigger='<C-a>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
-let g:UltiSnipsJumpBackwardTrigger='<s-tab>'" >> ~/.vimrc
-soucre $HOME/.bashrc
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips']" >> ~/.vimrc
+source $HOME/.bashrc
