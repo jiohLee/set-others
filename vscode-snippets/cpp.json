@@ -1,0 +1,137 @@
+{
+	"main" : {
+		"prefix": "main",
+		"body": [
+			"int main(int argc, char* argv[]) {",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		]
+	},
+
+	"mainn" : {
+		"prefix": "mainn",
+		"body": [
+			"int main() {",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		]
+	},
+
+	"header": {
+		"prefix": "inc",
+		"body": "#include <${1:stdio}.h>\n"
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if (${1:1}) {",
+			"\t",
+			"}"
+		]
+	},
+
+	"if else": {
+		"prefix": "ife",
+		"body": [
+			"if (${1:1}) {",
+			"\t$0",
+			"} else {",
+			"\t",
+			"}"
+		]
+	},
+
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else {",
+			"\t$0",
+			"}"
+		]
+	},
+
+	"elif": {
+		"prefix": "else if",
+		"body": [
+			"else if (${1:1}) {",
+			"\t",
+			"}"
+		]
+	},
+
+	"switch" :{
+		"prefix": "switch",
+		"body": [
+			"switch (${1:/*var*/}) {",
+			"\tcase ${2:/*var*/}:",
+			"\t\t${0}",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\tbreak;",
+			"}",
+		]
+	},
+
+	"case": {
+		"prefix": "case",
+		"body": [
+			"case ${1:/*var*/}:",
+			"\t${0}",
+			"\tbreak;",
+		]
+	},
+
+	"for": {
+	  	"prefix": "for",
+	  	"body": [
+			"for (${1:size_t} ${2:i} = ${3:0}; $2 < ${4:length}; $2++) {",
+			"\t$0",
+			"}"
+		],
+	},
+
+	"for reverse": {
+		"prefix": "forr",
+		"body": [
+			"for (${1:size_t} ${2:i} = ${3:length} - 1; $2 >= ${4:0}; $2--) {",
+			"\t$0",
+			"}"
+		]
+	},
+
+	"while" : {
+		"prefix": "while",
+		"body": [
+			"while (${1:1}) {",
+			"\t$0",
+			"}"
+		]
+	},
+
+	"do while": {
+		"prefix": "dowhile",
+		"body": [
+			"do {",
+			"\t$0",
+			"} while (${1:1});"
+		]
+	},
+
+	"function": {
+		"prefix": "fun",
+		"body": [
+			"${1:void} ${2:function_name}(${3:/*args*/}) {",
+			"\t$0",
+			"}"
+		]
+	},
+
+	"function definition" :{
+		"prefix": "fund",
+		"body": "${1:void} ${2:function_name}(${3:/*args*/});"
+	},
+}
+  
