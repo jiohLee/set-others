@@ -1,0 +1,102 @@
+{
+	"main" : {
+		"prefix": "main",
+		"body": [
+			"if __name__ == '__main__':",
+			"\t$0",
+		]
+	},
+
+	"import": {
+		"prefix": "imp",
+		"body": "import ${1:time}"
+	},
+
+	"from a import b": {
+		"prefix": "fimp",
+		"body": "from ${1:time} import ${2:sleep}\n$0"
+	},
+
+	"import a as b": {
+		"prefix": "impas",
+		"body": "import ${1:time.sleep} as ${2:sleep}\n$0"
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if ${1:True}:",
+			"\t",
+		]
+	},
+
+	"if else": {
+		"prefix": "ife",
+		"body": [
+			"if ${1:True}:",
+			"\t$0",
+			"else:",
+			"\t",
+		]
+	},
+
+	"else": {
+		"prefix": "else",
+		"body": [
+			"else:",
+			"\t$0",
+		]
+	},
+
+	"elif": {
+		"prefix": "else if",
+		"body": [
+			"elif ${1:True}:",
+			"\t",
+		]
+	},
+
+	"match" :{
+		"prefix": "match",
+		"body": [
+			"match ${1:/*var*/}:",
+			"\tcase ${2:/*var*/}:",
+			"\t\t${0}",
+			"\tcase _:",
+		]
+	},
+
+	"case": {
+		"prefix": "case",
+		"body": [
+			"case ${1:/*var*/}:",
+			"\t${0}",
+		]
+	},
+
+	"for": {
+	  	"prefix": "for",
+	  	"body": [
+			"for ${1:i} in ${2:/*iterator*/}",
+			"\t$0",
+		],
+	},
+
+	"while" : {
+		"prefix": "while",
+		"body": [
+			"while ${1:True}:",
+			"\t$0",
+		]
+	},
+
+	"function": {
+		"prefix": "fun",
+		"body": [
+			"def ${1:function_name}(${3:/*args*/}):",
+			"\t$0",
+			"\treturn"
+		]
+	},
+}
+  
